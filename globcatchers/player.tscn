@@ -2,9 +2,8 @@
 
 [ext_resource type="Script" path="res://player.gd" id="1_snf7o"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1mb1p"]
-radius = 0.47391
-height = 1.75572
+[sub_resource type="BoxShape3D" id="BoxShape3D_kl1fm"]
+size = Vector3(0.779785, 1.43005, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vrcdw"]
 _surfaces = [{
@@ -81,8 +80,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.685983, 0)
 script = ExtResource("1_snf7o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.872011, 0, 0, 0, 1, -0.0559918, 0.0677933, -0.103507)
-shape = SubResource("CapsuleShape3D_1mb1p")
+transform = Transform3D(1, 0, 0, 0, 0.872011, 0, 0, 0, 1, -0.037193, 0.0058946, -0.103507)
+shape = SubResource("BoxShape3D_kl1fm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.04, 0, -6.03983e-09, 0, 0.04, 0, 6.03983e-09, 0, -0.04, -0.138606, -0.674172, 0)
