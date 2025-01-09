@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://6d0oybk4jlpc"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5ljthml50psj" path="res://Low poly bench.obj" id="1_6kgln"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jwc8y"]
+size = Vector3(3.27225, 3.38626, 11.262)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4np4m"]
+size = Vector3(1, 3.32764, 11.5202)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h23ra"]
+size = Vector3(3.43359, 1.62006, 0.595459)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_786qq"]
+size = Vector3(3.39252, 1.50488, 0.667908)
+
+[node name="Banco" type="Node3D"]
+transform = Transform3D(1.01394, 0, 0, 0, 0.84544, 0, 0, 0, 0.921037, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.2401, 0, 0, 0, 0.2401, 0, 0, 0, 0.2401, 0, 0, 0.941216)
+mesh = ExtResource("1_6kgln")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1.05973, 0, 0, 0, 1.05973, 0, 0, 0, 1.05973, -0.863249, 1.15388, -5.72378)
+shape = SubResource("BoxShape3D_jwc8y")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(0.940016, -0.489279, 0, 0.489279, 0.940016, 0, 0, 0, 1.05973, -2.63941, 3.68871, -5.75423)
+shape = SubResource("BoxShape3D_4np4m")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(0.999985, 0, 0, 0, 1, 0, 0, 0, 1, -0.806588, 3.27316, -0.02089)
+shape = SubResource("BoxShape3D_h23ra")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(0.999984, 0, 0, 0, 1, 0, 0, 0, 1, -0.772752, 3.33018, -11.1343)
+shape = SubResource("BoxShape3D_786qq")

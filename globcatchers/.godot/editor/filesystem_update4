@@ -1,3 +1,4 @@
-res://Player.tscn
+res://árvore.tscn
 res://cena.tscn
-res://player.gd
+res://player.tscn
+res://banco.tscn

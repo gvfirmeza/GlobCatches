@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://co133aa0ve410"]
+
+[ext_resource type="ArrayMesh" uid="uid://bch67sa5fmyns" path="res://Lowpoly_tree_sample.obj" id="1_4n50c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a0vbx"]
+size = Vector3(2.84583, 9.80347, 3.34485)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_aeot3"]
+height = 1.96654
+radius = 4.55162
+
+[node name="Árvore" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23728, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+mesh = ExtResource("1_4n50c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0901514, 3.38916, -0.0322544)
+shape = SubResource("BoxShape3D_a0vbx")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(0.821149, 0.570713, -2.49467e-08, 0, -4.37114e-08, -0.999999, -0.570713, 0.821149, -3.58936e-08, 0.334677, 7.2863, -0.283518)
+shape = SubResource("CylinderShape3D_aeot3")
