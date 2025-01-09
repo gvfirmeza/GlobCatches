@@ -1,6 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://6d0oybk4jlpc"]
+[gd_scene load_steps=8 format=3 uid="uid://6d0oybk4jlpc"]
 
 [ext_resource type="ArrayMesh" uid="uid://c5ljthml50psj" path="res://assets/objs/Low poly bench.obj" id="1_45udf"]
+[ext_resource type="Texture2D" uid="uid://b7ejciaf2qsif" path="res://assets/textures/TexturaBanco.jpg" id="1_sflpc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u72qd"]
+albedo_texture = ExtResource("1_sflpc")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jwc8y"]
 size = Vector3(3.27225, 3.38626, 11.262)
@@ -19,6 +23,7 @@ transform = Transform3D(1.01394, 0, 0, 0, 0.84544, 0, 0, 0, 0.921037, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.2401, 0, 0, 0, 0.2401, 0, 0, 0, 0.2401, 0, 0, 0.941216)
+material_override = SubResource("StandardMaterial3D_u72qd")
 mesh = ExtResource("1_45udf")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
