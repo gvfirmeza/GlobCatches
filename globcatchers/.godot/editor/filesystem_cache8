@@ -1,9 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736454256
-cena.tscn::PackedScene::4095029202317668129::1736453256::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://co133aa0ve410::::res://árvore.tscn
-icon.svg::CompressedTexture2D::4908462387942234279::1736398029::1736398035::1::::<><>::
-Low poly bench.obj::Mesh::6901795601582906673::1736454256::1736454256::1::::<><>::
-Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736452167::1736452167::1::::<><>::
-player.gd::GDScript::-1::1736449043::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::6937914428174401509::1736453256::0::1::::<><>::res://player.gd
-árvore.tscn::PackedScene::5810909079115148049::1736453256::0::1::::<><>::uid://bch67sa5fmyns::::res://Lowpoly_tree_sample.obj
+::res://::1736456935
+banco.tscn::PackedScene::2183591474573696196::1736456599::0::1::::<><>::uid://c5ljthml50psj::::res://Low poly bench.obj
+cena.tscn::PackedScene::4095029202317668129::1736456599::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn
+player.gd::GDScript::-1::1736456094::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::6937914428174401509::1736456691::0::1::::<><>::res://player.gd<>uid://ctwjealhkrkr3::::res://Player.obj
+árvore.tscn::PackedScene::5810909079115148049::1736456599::0::1::::<><>::uid://bch67sa5fmyns::::res://Lowpoly_tree_sample.obj
+::res://assets/::1736456751
+::res://assets/objs/::1736456751
+Low poly bench.obj::Mesh::6901795601582906673::1736456094::1736456937::1::::<><>::
+Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736456094::1736456937::1::::<><>::
+Player.obj::Mesh::6152399320533590478::1736456444::1736456937::1::::<><>::
+::res://assets/textures/::1736456749
+PlayerTextura.png::CompressedTexture2D::7227528551347455366::1736456665::1736456937::1::::<><>::

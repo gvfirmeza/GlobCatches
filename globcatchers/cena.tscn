@@ -25,7 +25,7 @@ data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0
 [node name="Cena" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00289059, 2.38419e-07, 0.0208416)
 
-[node name="PlayerNovo" parent="." instance=ExtResource("1_y33pe")]
+[node name="Player" parent="." instance=ExtResource("1_y33pe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20144, 0)
 top_level = true
 

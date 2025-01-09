@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://6d0oybk4jlpc"]
 
-[ext_resource type="ArrayMesh" uid="uid://c5ljthml50psj" path="res://Low poly bench.obj" id="1_6kgln"]
+[ext_resource type="ArrayMesh" uid="uid://c5ljthml50psj" path="res://assets/objs/Low poly bench.obj" id="1_6kgln"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jwc8y"]
 size = Vector3(3.27225, 3.38626, 11.262)
