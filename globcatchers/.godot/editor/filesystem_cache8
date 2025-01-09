@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736457285
-banco.tscn::PackedScene::2183591474573696196::1736457202::0::1::::<><>::res://Low poly bench.obj
-cena.tscn::PackedScene::4095029202317668129::1736457231::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://68k11qwoei7x::::res://assets/textures/GramaTextura.jpg<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn
-player.gd::GDScript::-1::1736449043::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::6937914428174401509::1736457202::0::1::::<><>::res://player.gd
-árvore.tscn::PackedScene::5810909079115148049::1736457202::0::1::::<><>::res://Lowpoly_tree_sample.obj
-::res://assets/::1736457213
-::res://assets/objs/::1736457190
-Low poly bench.obj::Mesh::6901795601582906673::1736457129::1736457190::1::::<><>::
-Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736457129::1736457190::1::::<><>::
-Player.obj::Mesh::6152399320533590478::1736457129::1736457190::1::::<><>::
-::res://assets/textures/::1736457233
-GramaTextura.jpg::CompressedTexture2D::2244633610574598455::1736456677::1736457233::1::::<><>::
-PlayerTextura.png::CompressedTexture2D::7227528551347455366::1736457129::1736457190::1::::<><>::
+::res://::1736457581
+banco.tscn::PackedScene::2183591474573696196::1736457559::0::1::::<><>::uid://c5ljthml50psj::::res://assets/objs/Low poly bench.obj
+cena.tscn::PackedScene::4095029202317668129::1736457559::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://68k11qwoei7x::::res://assets/textures/GramaTextura.jpg<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn
+player.gd::GDScript::-1::1736456094::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::6937914428174401509::1736457559::0::1::::<><>::res://player.gd
+árvore.tscn::PackedScene::5810909079115148049::1736457559::0::1::::<><>::uid://bch67sa5fmyns::::res://assets/objs/Lowpoly_tree_sample.obj
+::res://assets/::1736456751
+::res://assets/objs/::1736456937
+Low poly bench.obj::Mesh::6901795601582906673::1736456094::1736457585::1::::<><>::
+Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736456094::1736457585::1::::<><>::
+Player.obj::Mesh::6152399320533590478::1736456444::1736457586::1::::<><>::
+::res://assets/textures/::1736457559
+GramaTextura.jpg::CompressedTexture2D::2244633610574598455::1736457559::1736457585::1::::<><>::
+PlayerTextura.png::CompressedTexture2D::7227528551347455366::1736456665::1736457583::1::::<><>::
