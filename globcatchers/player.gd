@@ -4,7 +4,7 @@ const SPEED = 3.0
 const RUN_SPEED = 7.0
 const JUMP_VELOCITY = 4.5
 
-var mouse_sensitivity := 0.001
+var mouse_sensitivity := 0.005
 var twist_input := 0.0
 var pitch_input := 0.0
 
@@ -39,8 +39,11 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
-	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	
+	var direction : Vector3 = (twist_pivot.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+
+	if input_dir != Vector2(0,0):
+		$MeshInstance3D.rotation_degrees.y = twist_pivot.rotation_degrees.y - rad_to_deg(input_dir.angle()) + 90
+
 	if(Input.is_action_pressed("ui_run")):
 		if direction:
 			velocity.x = direction.x * RUN_SPEED
