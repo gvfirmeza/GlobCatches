@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bylwsd1dlajk0"]
+[gd_scene load_steps=11 format=3 uid="uid://bylwsd1dlajk0"]
 
 [ext_resource type="PackedScene" uid="uid://c531o4fpse8pd" path="res://player.tscn" id="1_y33pe"]
+[ext_resource type="Texture2D" uid="uid://68k11qwoei7x" path="res://1601.m10.i311.n029.S.c10.164511620 Seamless green grass vector pattern.jpg" id="2_biy2g"]
 [ext_resource type="PackedScene" uid="uid://co133aa0ve410" path="res://árvore.tscn" id="2_k7xix"]
 [ext_resource type="PackedScene" uid="uid://6d0oybk4jlpc" path="res://banco.tscn" id="3_stan2"]
 
@@ -16,7 +17,11 @@ background_mode = 2
 sky = SubResource("Sky_3fa64")
 tonemap_mode = 2
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a7dps"]
+albedo_texture = ExtResource("2_biy2g")
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_v0x3v"]
+material = SubResource("StandardMaterial3D_a7dps")
 size = Vector2(10, 10)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8x66o"]
@@ -26,7 +31,7 @@ data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00289059, 2.38419e-07, 0.0208416)
 
 [node name="PlayerNovo" parent="." instance=ExtResource("1_y33pe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20144, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.857215, 0)
 top_level = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
