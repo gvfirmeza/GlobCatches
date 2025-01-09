@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 const SPEED = 3.0
-const RUN_SPEED = 5.5
+const RUN_SPEED = 7.0
 const JUMP_VELOCITY = 4.5
 
 var mouse_sensitivity := 0.005
@@ -42,22 +42,28 @@ func _physics_process(delta: float) -> void:
 	var direction : Vector3 = (twist_pivot.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 
 	if input_dir != Vector2(0,0):
-		$MeshInstance3D.rotation_degrees.y = twist_pivot.rotation_degrees.y - rad_to_deg(input_dir.angle()) + 90
+		$Skeleton3D.rotation_degrees.y = twist_pivot.rotation_degrees.y - rad_to_deg(input_dir.angle()) + 90
 
-	if(Input.is_action_pressed("ui_run")):
-		if direction:
+	if direction != Vector3.ZERO:
+		if Input.is_action_pressed("ui_run"):
 			velocity.x = direction.x * RUN_SPEED
 			velocity.z = direction.z * RUN_SPEED
+			$RunPlayer.play("running")
+			$WalkPlayer.stop()
+			$IdlePlayer.stop()
 		else:
-			velocity.x = move_toward(velocity.x, 0, RUN_SPEED)
-			velocity.z = move_toward(velocity.z, 0, RUN_SPEED)
-	else:
-		if direction:
 			velocity.x = direction.x * SPEED
 			velocity.z = direction.z * SPEED
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-			velocity.z = move_toward(velocity.z, 0, SPEED)
+			$WalkPlayer.play("walking")
+			$RunPlayer.stop()
+			$IdlePlayer.stop()
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.z = move_toward(velocity.z, 0, SPEED)
+		if is_on_floor():
+			$IdlePlayer.play("idle")
+			$RunPlayer.stop()
+			$WalkPlayer.stop()
 
 	move_and_slide()
 
