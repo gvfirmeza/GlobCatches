@@ -1,11 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736456720
-1601.m10.i311.n029.S.c10.164511620 Seamless green grass vector pattern.jpg::CompressedTexture2D::2244633610574598455::1736456677::1736456897::1::::<><>::
-banco.tscn::PackedScene::2183591474573696196::1736455702::0::1::::<><>::uid://c5ljthml50psj::::res://Low poly bench.obj
-cena.tscn::PackedScene::4095029202317668129::1736455748::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn
-icon.svg::CompressedTexture2D::4908462387942234279::1736398029::1736398035::1::::<><>::
-Low poly bench.obj::Mesh::6901795601582906673::1736454256::1736454256::1::::<><>::
-Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736452167::1736452167::1::::<><>::
+::res://::1736457231
+banco.tscn::PackedScene::2183591474573696196::1736457202::0::1::::<><>::res://Low poly bench.obj
+cena.tscn::PackedScene::4095029202317668129::1736457231::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://68k11qwoei7x::::res://assets/textures/GramaTextura.jpg<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn
 player.gd::GDScript::-1::1736449043::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::6937914428174401509::1736455702::0::1::::<><>::res://player.gd
-árvore.tscn::PackedScene::5810909079115148049::1736455702::0::1::::<><>::uid://bch67sa5fmyns::::res://Lowpoly_tree_sample.obj
+player.tscn::PackedScene::6937914428174401509::1736457202::0::1::::<><>::res://player.gd
+árvore.tscn::PackedScene::5810909079115148049::1736457202::0::1::::<><>::res://Lowpoly_tree_sample.obj
+::res://assets/::1736457213
+::res://assets/objs/::1736457190
+Low poly bench.obj::Mesh::6901795601582906673::1736457129::1736457190::1::::<><>::
+Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736457129::1736457190::1::::<><>::
+Player.obj::Mesh::6152399320533590478::1736457129::1736457190::1::::<><>::
+::res://assets/textures/::1736457231
+GramaTextura.jpg::CompressedTexture2D::2244633610574598455::1736456677::1736457233::1::::<><>::
+PlayerTextura.png::CompressedTexture2D::7227528551347455366::1736457129::1736457190::1::::<><>::
