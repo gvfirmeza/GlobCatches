@@ -1,3 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736398035
+::res://::1736442232
+cena.tscn::PackedScene::4095029202317668129::1736441772::0::1::::<><>::uid://c531o4fpse8pd::::res://Player.tscn
+FinalBaseMesh.obj::Mesh::8138296508757999675::1736441642::1736441643::1::::<><>::
 icon.svg::CompressedTexture2D::4908462387942234279::1736398029::1736398035::1::::<><>::
+player.gd::GDScript::-1::1736441733::0::1::::<>CharacterBody3D<>::
+Player.tscn::PackedScene::6937914428174401509::1736441796::0::1::::<><>::res://player.gd<>uid://dn7is38itskid::::res://FinalBaseMesh.obj
+The Limited 4.obj::Mesh::1949605896847707344::1736442232::1736442232::1::::<><>::

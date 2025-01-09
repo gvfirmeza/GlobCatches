@@ -1,4 +1,2 @@
-res://principal.tscn
-res://player.tscn
+res://Player.tscn
 res://cena.tscn
-res://player.gd

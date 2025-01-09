@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bylwsd1dlajk0"]
 
-[ext_resource type="PackedScene" uid="uid://c531o4fpse8pd" path="res://Player.tscn" id="1_y33pe"]
+[ext_resource type="PackedScene" uid="uid://wugeyxovqj6" path="res://playerNovo.tscn" id="1_y33pe"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_htfcv"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -24,7 +24,6 @@ data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0
 
 [node name="PlayerNovo" parent="." instance=ExtResource("1_y33pe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
-top_level = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.820002, -0.214206, 0.530765, -0.362331, 0.523582, 0.771089, -0.443071, -0.824607, 0.351725, 0, 0, 0)
