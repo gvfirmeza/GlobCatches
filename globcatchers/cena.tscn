@@ -22,6 +22,7 @@ size = Vector2(10, 10)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mn7rf"]
 albedo_texture = ExtResource("2_1eb6k")
+uv1_scale = Vector3(2, 2, 2)
 uv1_triplanar = true
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8x66o"]
@@ -43,6 +44,7 @@ shadow_enabled = true
 environment = SubResource("Environment_yhf6h")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.2, 0, 0, 0, 1, 0, 0, 0, 3.2, 0, 0, 0)
 mesh = SubResource("PlaneMesh_hewbq")
 surface_material_override/0 = SubResource("StandardMaterial3D_mn7rf")
 
@@ -52,7 +54,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mn7rf")
 shape = SubResource("ConcavePolygonShape3D_8x66o")
 
 [node name="Árvore" parent="." instance=ExtResource("2_k7xix")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.128139, -2.76959)
+transform = Transform3D(0.981047, 0, 0.193772, 0, 1, 0, -0.193772, 0, 0.981047, -2.85679, 0.128139, -2.80735)
 
 [node name="Banco" parent="." instance=ExtResource("3_stan2")]
 transform = Transform3D(1.01394, 0, 0, 0, 0.84544, 0, 0, 0, 0.921037, -2.50099, 0.00501895, 0.242388)

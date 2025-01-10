@@ -1,16 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736466500
-banco.tscn::PackedScene::2183591474573696196::1736466339::0::1::::<><>::uid://c5ljthml50psj::::res://assets/objs/Low poly bench.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg
-cena.tscn::PackedScene::4095029202317668129::1736466339::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn
+::res://::1736471441
+banco.tscn::PackedScene::2183591474573696196::1736471090::0::1::::<><>::uid://c5ljthml50psj::::res://assets/objs/Low poly bench.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg
+cena.tscn::PackedScene::4095029202317668129::1736471089::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn
 player.gd::GDScript::-1::1736466339::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::6937914428174401509::1736466339::0::1::::<><>::res://player.gd<>uid://da8clshjrdeha::::res://assets/textures/PlayerTextura.png
-árvore.tscn::PackedScene::5810909079115148049::1736466339::0::1::::<><>::uid://bch67sa5fmyns::::res://assets/objs/Lowpoly_tree_sample.obj
+player.tscn::PackedScene::6937914428174401509::1736471089::0::1::::<><>::res://player.gd<>uid://da8clshjrdeha::::res://assets/textures/PlayerTextura.png
+árvore.tscn::PackedScene::5810909079115148049::1736471090::0::1::::<><>::uid://bch67sa5fmyns::::res://assets/objs/Lowpoly_tree_sample.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png
 ::res://assets/::1736466339
-::res://assets/objs/::1736466339
+::res://assets/objs/::1736466501
 Low poly bench.obj::Mesh::6901795601582906673::1736466339::1736466501::1::::<><>::
 Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736466339::1736466501::1::::<><>::
 Player.obj::Mesh::6152399320533590478::1736466339::1736466501::1::::<><>::
-::res://assets/textures/::1736466339
+::res://assets/textures/::1736466501
 pallet moddeling.png::CompressedTexture2D::8508100002448010791::1736466339::1736466501::1::::<><>::
 PlayerTextura.png::CompressedTexture2D::7227528551347455366::1736466339::1736466501::1::::<><>::
 TexturaBanco.jpg::CompressedTexture2D::4641271636099793709::1736466339::1736466501::1::::<><>::

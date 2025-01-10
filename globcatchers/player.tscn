@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://da8clshjrdeha" path="res://assets/textures/PlayerTextura.png" id="3_tsjll"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wepau"]
-size = Vector3(1, 1.3869, 1.11682)
+size = Vector3(1, 1.68027, 1.40665)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6vt27"]
 
@@ -755,7 +755,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.685983, 0)
 script = ExtResource("1_snf7o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00765759, 0.0370182, -0.326008)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00765759, 0.183701, -0.315068)
 shape = SubResource("BoxShape3D_wepau")
 
 [node name="TwistPivot" type="Node3D" parent="."]
