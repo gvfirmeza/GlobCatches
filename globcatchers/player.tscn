@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://c531o4fpse8pd"]
+[gd_scene load_steps=16 format=4 uid="uid://c531o4fpse8pd"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_snf7o"]
+[ext_resource type="Texture2D" uid="uid://c1thddcmiq4i6" path="res://assets/textures/PlayerTextura2.png" id="2_b3gx4"]
 [ext_resource type="Texture2D" uid="uid://da8clshjrdeha" path="res://assets/textures/PlayerTextura.png" id="3_tsjll"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wepau"]
@@ -753,6 +754,8 @@ _data = {
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.685983, 0)
 script = ExtResource("1_snf7o")
+texture1 = ExtResource("3_tsjll")
+texture2 = ExtResource("2_b3gx4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00765759, 0.183701, -0.315068)
@@ -1001,7 +1004,7 @@ bones/32/position = Vector3(5.03947e-10, 0.103422, -8.08373e-11)
 bones/32/rotation = Quaternion(2.42334e-09, -1.99493e-17, 2.77556e-17, 1)
 bones/32/scale = Vector3(1, 1, 1)
 
-[node name="Mesh1_Mesh1_039" type="MeshInstance3D" parent="Skeleton3D"]
+[node name="PlayerMesh" type="MeshInstance3D" parent="Skeleton3D"]
 mesh = SubResource("ArrayMesh_ig8py")
 skin = SubResource("Skin_c78bl")
 surface_material_override/0 = SubResource("StandardMaterial3D_tcrn2")

@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 const SPEED = 3.0
 const RUN_SPEED = 7.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 5.5
 
 var mouse_sensitivity := 0.005
 var twist_input := 0.0
@@ -11,8 +11,16 @@ var pitch_input := 0.0
 @onready var twist_pivot := $TwistPivot
 @onready var pitch_pivot := $TwistPivot/PitchPivot
 
+@export var texture1: Texture2D
+@export var texture2: Texture2D
+@onready var current_material: Material = $Skeleton3D/PlayerMesh.get_surface_override_material(0)
+var is_using_texture1: bool = true
+
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	if not current_material:
+		current_material = StandardMaterial3D.new()
+		$Skeleton3D.set_surface_override_material(0, current_material)
 
 func _physics_process(delta: float) -> void:
 	#Handling cursor visibility
@@ -31,7 +39,7 @@ func _physics_process(delta: float) -> void:
 	
 	# Add the gravity.
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity += get_gravity() * delta * 2
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
@@ -66,6 +74,14 @@ func _physics_process(delta: float) -> void:
 			$WalkPlayer.stop()
 
 	move_and_slide()
+	
+	if Input.is_action_just_pressed("pe"):
+		if is_using_texture1 and texture2:
+			current_material.set("albedo_texture", texture2)
+			is_using_texture1 = false
+		elif not is_using_texture1 and texture1:
+			current_material.set("albedo_texture", texture1)
+			is_using_texture1 = true
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
