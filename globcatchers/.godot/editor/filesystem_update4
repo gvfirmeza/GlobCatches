@@ -1,6 +1,6 @@
-res://buraco.tscn
+res://cena_inicial.tscn
 res://cena.tscn
 res://player.tscn
 res://árvore.tscn
 res://banco.tscn
-res://player.gd
+res://buraco.tscn

@@ -1,3 +1,7 @@
+Button
+Panel
+VBoxContainer
+BoxContainer
 MeshInstance3D
 CollisionShape3D
 StaticBody3D

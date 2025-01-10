@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkuarbc12yna5"]
+
+[ext_resource type="Script" path="res://cena_inicial.gd" id="1_ga6lk"]
+[ext_resource type="Texture2D" uid="uid://2xejbgb1tr8c" path="res://assets/LOGO_GLOBCATCHERS.png" id="2_8xt5p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6kwa"]
+bg_color = Color(0.0131408, 6.85262e-06, 0.0932069, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8irw"]
+bg_color = Color(0.126667, 0.076, 0.38, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dye0t"]
+bg_color = Color(0.121317, 0.000146763, 0.206644, 1)
+
+[node name="CenaInicial" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 0.759766
+offset_bottom = 0.439941
+script = ExtResource("1_ga6lk")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+offset_right = 1932.0
+offset_bottom = 1097.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h6kwa")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 630.62
+offset_top = 724.78
+offset_right = 1226.62
+offset_bottom = 889.78
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+theme_override_styles/hover = SubResource("StyleBoxFlat_m8irw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dye0t")
+text = "Play This Insanely Good Game"
+
+[node name="LogoGlobcatchers" type="Sprite2D" parent="."]
+position = Vector2(941, 313)
+scale = Vector2(1.46335, 1.46335)
+texture = ExtResource("2_8xt5p")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
