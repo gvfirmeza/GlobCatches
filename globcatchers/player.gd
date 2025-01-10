@@ -74,7 +74,18 @@ func _physics_process(delta: float) -> void:
 			$WalkPlayer.stop()
 
 	move_and_slide()
-	
+
+	for index in get_slide_collision_count():
+		var collision := get_slide_collision(index)
+		var body := collision.get_collider()
+		if body and body.name == "Buraco":
+			if Input.is_action_just_pressed("mouse_click"):
+				if $CatchPlayer:
+					$CatchPlayer.play("catch")
+					while $CatchPlayer.is_playing():
+						await get_tree().create_timer(0.1).timeout
+					body.queue_free()
+
 	if Input.is_action_just_pressed("pe"):
 		if is_using_texture1 and texture2:
 			current_material.set("albedo_texture", texture2)

@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://bylwsd1dlajk0"]
+[gd_scene load_steps=13 format=3 uid="uid://bylwsd1dlajk0"]
 
 [ext_resource type="PackedScene" uid="uid://c531o4fpse8pd" path="res://player.tscn" id="1_y33pe"]
 [ext_resource type="Texture2D" uid="uid://cwafdjuycpasn" path="res://assets/textures/TexturaGrama.png" id="2_1eb6k"]
 [ext_resource type="PackedScene" uid="uid://co133aa0ve410" path="res://árvore.tscn" id="2_k7xix"]
 [ext_resource type="PackedScene" uid="uid://6d0oybk4jlpc" path="res://banco.tscn" id="3_stan2"]
 [ext_resource type="AudioStream" uid="uid://bx4xm4jx3aa13" path="res://assets/sounds/musica-joguin.wav" id="5_7c38p"]
+[ext_resource type="PackedScene" uid="uid://bglfwggep566y" path="res://buraco.tscn" id="5_u01lo"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_htfcv"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -63,7 +64,10 @@ transform = Transform3D(0.981047, 0, 0.193772, 0, 1, 0, -0.193772, 0, 0.981047, 
 [node name="Banco" parent="." instance=ExtResource("3_stan2")]
 transform = Transform3D(1.01394, 0, 0, 0, 0.84544, 0, 0, 0, 0.921037, -12.0575, -0.019872, 0.216175)
 
+[node name="Buraco" parent="." instance=ExtResource("5_u01lo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82588, -0.0161214, -11.1321)
+
 [node name="Trilha Sonora" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_7c38p")
-volume_db = -10.0
+volume_db = -7.0
 autoplay = true
