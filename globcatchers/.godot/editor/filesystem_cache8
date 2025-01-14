@@ -1,24 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736553228
-banco.tscn::PackedScene::2183591474573696196::1736550943::0::1::::<><>::uid://c5ljthml50psj::::res://assets/objs/Low poly bench.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg
-buraco.tscn::PackedScene::2830605097857623058::1736550943::0::1::::<><>::
-cena.tscn::PackedScene::4095029202317668129::1736550943::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn<>uid://bx4xm4jx3aa13::::res://assets/sounds/musica-joguin.wav<>uid://bglfwggep566y::::res://buraco.tscn
-cena_inicial.gd::GDScript::-1::1736550938::0::1::::<>Control<>::
-cena_inicial.tscn::PackedScene::7902468457868525186::1736550944::0::1::::<><>::res://cena_inicial.gd
-player.gd::GDScript::-1::1736549388::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::6937914428174401509::1736550943::0::1::::<><>::res://player.gd<>uid://c1thddcmiq4i6::::res://assets/textures/PlayerTextura2.png<>uid://da8clshjrdeha::::res://assets/textures/PlayerTextura.png
-árvore.tscn::PackedScene::5810909079115148049::1736550943::0::1::::<><>::uid://bch67sa5fmyns::::res://assets/objs/Lowpoly_tree_sample.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png
-::res://assets/::1736553228
-LOGO_GLOBCATCHERS.png::CompressedTexture2D::1942838468559583488::1736553221::1736553229::1::::<><>::
-::res://assets/objs/::1736544204
-Low poly bench.obj::Mesh::6901795601582906673::1736456094::1736544203::1::::<><>::
-Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736456094::1736544203::1::::<><>::
-Player.obj::Mesh::6152399320533590478::1736456444::1736544204::1::::<><>::
-::res://assets/sounds/::1736544203
-musica-joguin.wav::AudioStreamWAV::4062050500758893808::1736544132::1736544203::1::::<><>::
-::res://assets/textures/::1736544202
-pallet moddeling.png::CompressedTexture2D::8508100002448010791::1736471681::1736544199::1::::<><>::
-PlayerTextura2.png::CompressedTexture2D::6637405016849497507::1736471683::1736544202::1::::<><>::
-PlayerTextura.png::CompressedTexture2D::7227528551347455366::1736456665::1736544199::1::::<><>::
-TexturaBanco.jpg::CompressedTexture2D::4641271636099793709::1736465480::1736544199::1::::<><>::
-TexturaGrama.png::CompressedTexture2D::6317305374468414217::1736465480::1736544199::1::::<><>::
+::res://::1736814559
+banco.tscn::PackedScene::2183591474573696196::1736814523::0::1::::<><>::uid://c5ljthml50psj::::res://assets/objs/Low poly bench.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg
+buraco.tscn::PackedScene::2830605097857623058::1736814523::0::1::::<><>::
+cena.tscn::PackedScene::4095029202317668129::1736814523::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn<>uid://bx4xm4jx3aa13::::res://assets/sounds/musica-joguin.wav<>uid://bglfwggep566y::::res://buraco.tscn
+cena_inicial.gd::GDScript::-1::1736814523::0::1::::<>Control<>::
+cena_inicial.tscn::PackedScene::7902468457868525186::1736814523::0::1::::<><>::res://cena_inicial.gd<>uid://2xejbgb1tr8c::::res://assets/LOGO_GLOBCATCHERS.png
+player.gd::GDScript::-1::1736814523::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::6937914428174401509::1736814523::0::1::::<><>::res://player.gd<>uid://c1thddcmiq4i6::::res://assets/textures/PlayerTextura2.png<>uid://da8clshjrdeha::::res://assets/textures/PlayerTextura.png
+árvore.tscn::PackedScene::5810909079115148049::1736814523::0::1::::<><>::uid://bch67sa5fmyns::::res://assets/objs/Lowpoly_tree_sample.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png
+::res://assets/::1736814523
+LOGO_GLOBCATCHERS.png::CompressedTexture2D::1942838468559583488::1736814523::1736814560::1::::<><>::
+::res://assets/objs/::1736814523
+Low poly bench.obj::Mesh::6901795601582906673::1736814523::1736814562::1::::<><>::
+Lowpoly_tree_sample.obj::Mesh::2543189334218848156::1736814523::1736814562::1::::<><>::
+Player.obj::Mesh::6152399320533590478::1736814523::1736814562::1::::<><>::
+::res://assets/sounds/::1736814523
+musica-joguin.wav::AudioStreamWAV::4062050500758893808::1736814523::1736814562::1::::<><>::
+::res://assets/textures/::1736814523
+pallet moddeling.png::CompressedTexture2D::8508100002448010791::1736814523::1736814560::1::::<><>::
+PlayerTextura2.png::CompressedTexture2D::6637405016849497507::1736814523::1736814561::1::::<><>::
+PlayerTextura.png::CompressedTexture2D::7227528551347455366::1736814523::1736814560::1::::<><>::
+TexturaBanco.jpg::CompressedTexture2D::4641271636099793709::1736814523::1736814560::1::::<><>::
+TexturaGrama.png::CompressedTexture2D::6317305374468414217::1736814523::1736814560::1::::<><>::
