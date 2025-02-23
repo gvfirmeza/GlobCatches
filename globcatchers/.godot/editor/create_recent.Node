@@ -1,9 +1,10 @@
+Area3D
+CollisionShape3D
 Button
 Panel
 VBoxContainer
 BoxContainer
 MeshInstance3D
-CollisionShape3D
 StaticBody3D
 AudioStreamPlayer
 RigidBody3D
@@ -11,5 +12,3 @@ Node3D
 CharacterBody3D
 Camera3D
 CollisionPolygon3D
-SpringArm3D
-Sprite2D
