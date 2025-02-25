@@ -1,13 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740292206
+::res://::1740443775
 banco.tscn::PackedScene::2183591474573696196::1739836981::0::1::::<><>::uid://c5ljthml50psj::::res://assets/objs/Low poly bench.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg
-buraco.tscn::PackedScene::2830605097857623058::1739836981::0::1::::<><>::
-cena.tscn::PackedScene::4095029202317668129::1739836981::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn<>uid://bx4xm4jx3aa13::::res://assets/sounds/musica-joguin.wav<>uid://bglfwggep566y::::res://buraco.tscn
+buraco.gd::GDScript::-1::1740296655::0::1::::<>Area3D<>::
+buraco.tscn::PackedScene::3399152119456286843::1740297036::0::1::::<><>::res://buraco.gd
+cena.tscn::PackedScene::4095029202317668129::1740297051::0::1::::<><>::uid://c531o4fpse8pd::::res://player.tscn<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png<>uid://co133aa0ve410::::res://árvore.tscn<>uid://6d0oybk4jlpc::::res://banco.tscn<>uid://bx4xm4jx3aa13::::res://assets/sounds/musica-joguin.wav<>uid://bootsk3n6xy0b::::res://buraco.tscn
 cena_inicial.gd::GDScript::-1::1736814523::0::1::::<>Control<>::
-cena_inicial.tscn::PackedScene::7902468457868525186::1739836981::0::1::::<><>::res://cena_inicial.gd<>uid://2xejbgb1tr8c::::res://assets/LOGO_GLOBCATCHERS.png
-player.gd::GDScript::-1::1736814996::0::1::::<>CharacterBody3D<>::
-player.tscn::PackedScene::6937914428174401509::1739836981::0::1::::<><>::res://player.gd<>uid://c1thddcmiq4i6::::res://assets/textures/PlayerTextura2.png<>uid://da8clshjrdeha::::res://assets/textures/PlayerTextura.png
-árvore.tscn::PackedScene::5810909079115148049::1739836981::0::1::::<><>::uid://bch67sa5fmyns::::res://assets/objs/Lowpoly_tree_sample.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png
+cena_inicial.tscn::PackedScene::7902468457868525186::1740297036::0::1::::<><>::res://cena_inicial.gd<>uid://2xejbgb1tr8c::::res://assets/LOGO_GLOBCATCHERS.png
+player.gd::GDScript::-1::1740297036::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::6937914428174401509::1740297036::0::1::::<><>::res://player.gd<>uid://c1thddcmiq4i6::::res://assets/textures/PlayerTextura2.png<>uid://da8clshjrdeha::::res://assets/textures/PlayerTextura.png
+árvore.tscn::PackedScene::5810909079115148049::1740292971::0::1::::<><>::uid://bch67sa5fmyns::::res://assets/objs/Lowpoly_tree_sample.obj<>uid://b7ejciaf2qsif::::res://assets/textures/TexturaBanco.jpg<>uid://cwafdjuycpasn::::res://assets/textures/TexturaGrama.png
 ::res://assets/::1736814560
 LOGO_GLOBCATCHERS.png::CompressedTexture2D::1942838468559583488::1736814523::1736814560::1::::<><>::
 ::res://assets/objs/::1736814562

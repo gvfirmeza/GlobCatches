@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://bylwsd1dlajk0"]
+[gd_scene load_steps=15 format=3 uid="uid://bylwsd1dlajk0"]
 
+[ext_resource type="Script" path="res://cena.gd" id="1_3m7su"]
 [ext_resource type="PackedScene" uid="uid://c531o4fpse8pd" path="res://player.tscn" id="1_y33pe"]
 [ext_resource type="Texture2D" uid="uid://cwafdjuycpasn" path="res://assets/textures/TexturaGrama.png" id="2_1eb6k"]
 [ext_resource type="PackedScene" uid="uid://co133aa0ve410" path="res://árvore.tscn" id="2_k7xix"]
@@ -30,8 +31,13 @@ uv1_triplanar = true
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8x66o"]
 data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0, -5)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_wu7cs"]
+size = Vector3(25.3524, 0.001, 30.2264)
+
 [node name="Cena" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00289059, 2.38419e-07, 0.0208416)
+script = ExtResource("1_3m7su")
+objeto_spawnado = ExtResource("5_u01lo")
 
 [node name="PlayerNovo" parent="." instance=ExtResource("1_y33pe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00205088, 0.850917, 2.64318)
@@ -64,19 +70,19 @@ transform = Transform3D(0.981047, 0, 0.193772, 0, 1, 0, -0.193772, 0, 0.981047, 
 [node name="Banco" parent="." instance=ExtResource("3_stan2")]
 transform = Transform3D(1.01394, 0, 0, 0, 0.84544, 0, 0, 0, 0.921037, -12.0575, -0.019872, 0.216175)
 
-[node name="Buraci" parent="." instance=ExtResource("5_u01lo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.98376, 1.01526, -3.26718)
-
-[node name="Buraco" parent="." instance=ExtResource("5_u01lo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512786, 0.507628, -4.23203)
-
 [node name="Trilha Sonora" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_7c38p")
 volume_db = -7.0
 autoplay = true
 
-[connection signal="done_digging" from="PlayerNovo" to="Buraco" method="_on_player_novo_done_digging"]
-[connection signal="player_entered" from="Buraci" to="PlayerNovo" method="_on_buraco_player_entered"]
-[connection signal="player_exited" from="Buraci" to="PlayerNovo" method="_on_buraco_player_exited"]
-[connection signal="player_entered" from="Buraco" to="PlayerNovo" method="_on_buraco_player_entered"]
-[connection signal="player_exited" from="Buraco" to="PlayerNovo" method="_on_buraco_player_exited"]
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.66838, 0.4995, 0.00250244)
+shape = SubResource("BoxShape3D_wu7cs")
+
+[node name="BuracoSpawn" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="BuracoSpawn" to="." method="_on_buraco_spawn_timeout"]

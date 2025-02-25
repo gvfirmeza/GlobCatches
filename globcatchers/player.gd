@@ -29,24 +29,25 @@ func _ready() -> void:
 		$Skeleton3D.set_surface_override_material(0, current_material)
 
 func _physics_process(delta: float) -> void:
-	if can_move:
-		#Handling cursor visibility
-		if Input.is_action_just_pressed("ui_cancel"):
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		
-		if Input.is_action_just_pressed("mouse_click"):
-			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
-				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)	
-		
-		twist_pivot.rotate_y(twist_input)
-		pitch_pivot.rotate_x(pitch_input)
-		pitch_pivot.rotation.x = clamp(
-			pitch_pivot.rotation.x,
-			deg_to_rad(-30),
-			deg_to_rad(30)
-		)
-		twist_input = 0.0
-		pitch_input = 0.0
+	#Handling cursor visibility
+	if Input.is_action_just_pressed("ui_cancel"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
+	if Input.is_action_just_pressed("mouse_click"):
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)	
+	
+	twist_pivot.rotate_y(twist_input)
+	pitch_pivot.rotate_x(pitch_input)
+	pitch_pivot.rotation.x = clamp(
+		pitch_pivot.rotation.x,
+		deg_to_rad(-30),
+		deg_to_rad(30)
+	)
+	twist_input = 0.0
+	pitch_input = 0.0
+	
+	if can_move: 
 		
 		# Add the gravity.
 		if not is_on_floor():
@@ -102,10 +103,15 @@ func _unhandled_input(event: InputEvent) -> void:
 			twist_input = - event.relative.x * mouse_sensitivity
 			pitch_input = - event.relative.y * mouse_sensitivity
 
+func _on_node_added(node):
+	if node.is_in_group("buraco"):
+		node.player_entered.connect(_on_buraco_player_entered)
+		node.player_exited.connect(_on_buraco_player_exited)
+
 func _on_buraco_player_entered(area) -> void:
 	is_colliding_buraco = true
 	buraco_atual = area
-	
+
 func _on_buraco_player_exited() -> void:
 	is_colliding_buraco = false
 	buraco_atual = null

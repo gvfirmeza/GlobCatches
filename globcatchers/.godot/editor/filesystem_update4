@@ -1,7 +1,7 @@
-res://buraco.tscn
 res://cena.tscn
-res://player.tscn
-res://árvore.tscn
-res://cena_inicial.tscn
 res://player.gd
+res://cena.gd
+res://player.tscn
+res://cena_inicial.tscn
+res://buraco.tscn
 res://buraco.gd
