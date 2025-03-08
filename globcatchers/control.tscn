@@ -21,6 +21,7 @@ grow_vertical = 2
 script = ExtResource("1_0fbet")
 
 [node name="GlobPopUp" type="Control" parent="."]
+visible = false
 layout_mode = 2
 anchors_preset = 0
 offset_right = 40.0
@@ -100,5 +101,86 @@ offset_right = 260.0
 offset_bottom = -101.0
 text = "X"
 
+[node name="BestiaryPopUp" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="BestiaryPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -986.0
+offset_top = -562.5
+offset_right = 986.0
+offset_bottom = 562.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
+
+[node name="Label2" type="Label" parent="BestiaryPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.5
+offset_top = -466.5
+offset_right = 168.5
+offset_bottom = -383.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "Bestiary"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonBestiary" type="Button" parent="BestiaryPopUp"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.275
+anchor_top = 1.275
+anchor_right = 1.275
+anchor_bottom = 1.275
+offset_left = 717.0
+offset_top = -497.0
+offset_right = 748.0
+offset_bottom = -466.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+text = "X"
+
+[node name="BestiaryGrid" type="GridContainer" parent="BestiaryPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 63.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 500
+theme_override_constants/v_separation = 400
+columns = 2
+
 [connection signal="button_down" from="GlobPopUp/Button" to="." method="_on_button_button_down"]
 [connection signal="pressed" from="GlobPopUp/Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="BestiaryPopUp/ButtonBestiary" to="." method="_on_button_bestiary_button_down"]
+[connection signal="pressed" from="BestiaryPopUp/ButtonBestiary" to="." method="_on_button_bestiary_pressed"]

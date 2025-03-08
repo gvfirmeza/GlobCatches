@@ -1,0 +1,83 @@
+[gd_scene load_steps=5 format=3 uid="uid://v22ryg1tqsu7"]
+
+[ext_resource type="Script" uid="uid://bynhu76w4yilv" path="res://bestiary_slot.gd" id="1_c4p41"]
+[ext_resource type="Texture2D" uid="uid://cekgwkwcosiyy" path="res://assets/cadeado.png" id="2_ej675"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ej675"]
+bg_color = Color(0.44, 0.44, 0.44, 1)
+
+[sub_resource type="Theme" id="Theme_c16yi"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c4p41")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -143.0
+offset_right = 102.0
+offset_bottom = 137.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ej675")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.0
+offset_top = -130.5
+offset_right = 106.0
+offset_bottom = 130.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_c16yi")
+texture = ExtResource("2_ej675")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.0
+offset_top = 130.0
+offset_right = 106.0
+offset_bottom = 199.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.0
+offset_top = 131.0
+offset_right = 106.0
+offset_bottom = 200.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1

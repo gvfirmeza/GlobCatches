@@ -1,9 +1,5 @@
-res://banco.tscn
-res://buraco.tscn
-res://cena.tscn
-res://cena_inicial.tscn
-res://player.tscn
-res://árvore.tscn
-res://player.gd
 res://control.gd
+res://BestiarySlot.tscn
+res://bestiary_slot.gd
 res://control.tscn
+res://cena.tscn
