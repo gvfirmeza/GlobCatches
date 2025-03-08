@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://bylwsd1dlajk0"]
+[gd_scene load_steps=16 format=3 uid="uid://bylwsd1dlajk0"]
 
-[ext_resource type="Script" path="res://cena.gd" id="1_3m7su"]
+[ext_resource type="Script" uid="uid://2dcuhdl1u5uy" path="res://cena.gd" id="1_3m7su"]
 [ext_resource type="PackedScene" uid="uid://c531o4fpse8pd" path="res://player.tscn" id="1_y33pe"]
 [ext_resource type="Texture2D" uid="uid://cwafdjuycpasn" path="res://assets/textures/TexturaGrama.png" id="2_1eb6k"]
 [ext_resource type="PackedScene" uid="uid://co133aa0ve410" path="res://árvore.tscn" id="2_k7xix"]
 [ext_resource type="PackedScene" uid="uid://6d0oybk4jlpc" path="res://banco.tscn" id="3_stan2"]
+[ext_resource type="PackedScene" uid="uid://dqlw1fnf7d026" path="res://control.tscn" id="3_yan1i"]
 [ext_resource type="AudioStream" uid="uid://bx4xm4jx3aa13" path="res://assets/sounds/musica-joguin.wav" id="5_7c38p"]
 [ext_resource type="PackedScene" uid="uid://bootsk3n6xy0b" path="res://buraco.tscn" id="5_u01lo"]
 
@@ -35,9 +36,10 @@ data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0
 size = Vector3(25.3524, 0.001, 30.2264)
 
 [node name="Cena" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00289059, 2.38419e-07, 0.0208416)
 script = ExtResource("1_3m7su")
 objeto_spawnado = ExtResource("5_u01lo")
+
+[node name="Control" parent="." instance=ExtResource("3_yan1i")]
 
 [node name="PlayerNovo" parent="." instance=ExtResource("1_y33pe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00205088, 0.850917, 2.64318)
@@ -82,7 +84,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.66838, 0.4995, 0.00250244)
 shape = SubResource("BoxShape3D_wu7cs")
 
 [node name="BuracoSpawn" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 2.0
 autostart = true
 
+[connection signal="done_digging" from="PlayerNovo" to="Control" method="_on_player_novo_done_digging"]
 [connection signal="timeout" from="BuracoSpawn" to="." method="_on_buraco_spawn_timeout"]

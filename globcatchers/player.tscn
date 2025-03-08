@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=4 uid="uid://c531o4fpse8pd"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_snf7o"]
+[ext_resource type="Script" uid="uid://bjd4j6rwcmvq" path="res://player.gd" id="1_snf7o"]
 [ext_resource type="Texture2D" uid="uid://c1thddcmiq4i6" path="res://assets/textures/PlayerTextura2.png" id="2_b3gx4"]
 [ext_resource type="Texture2D" uid="uid://da8clshjrdeha" path="res://assets/textures/PlayerTextura.png" id="3_tsjll"]
 
@@ -329,7 +329,7 @@ tracks/27/keys = PackedFloat32Array(0, 1, -0.125395, -0.0679014, -0.0717928, 0.9
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gssq0"]
 _data = {
-"running": SubResource("Animation_0ba7e")
+&"running": SubResource("Animation_0ba7e")
 }
 
 [sub_resource type="Animation" id="Animation_4tdfp"]
@@ -535,7 +535,7 @@ tracks/27/keys = PackedFloat32Array(0, 1, -0.125395, -0.0679014, -0.0717928, 0.9
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bva68"]
 _data = {
-"walking": SubResource("Animation_4tdfp")
+&"walking": SubResource("Animation_4tdfp")
 }
 
 [sub_resource type="Animation" id="Animation_704bt"]
@@ -748,7 +748,7 @@ tracks/28/keys = PackedFloat32Array(0, 1, -0.232158, -0.14795, -0.159138, 0.9480
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_otrbe"]
 _data = {
-"idle": SubResource("Animation_704bt")
+&"idle": SubResource("Animation_704bt")
 }
 
 [sub_resource type="Animation" id="Animation_wdi4r"]
@@ -960,7 +960,7 @@ tracks/28/keys = PackedFloat32Array(0, 1, -0.125395, -0.0679015, -0.0717929, 0.9
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k15hw"]
 _data = {
-"catch": SubResource("Animation_wdi4r")
+&"catch": SubResource("Animation_wdi4r")
 }
 
 [node name="Player" type="CharacterBody3D"]
@@ -1224,21 +1224,21 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tcrn2")
 
 [node name="RunPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_gssq0")
+&"": SubResource("AnimationLibrary_gssq0")
 }
 
 [node name="WalkPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_bva68")
+&"": SubResource("AnimationLibrary_bva68")
 }
 
 [node name="IdlePlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_otrbe")
+&"": SubResource("AnimationLibrary_otrbe")
 }
 
 [node name="CatchPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_k15hw")
+&"": SubResource("AnimationLibrary_k15hw")
 }
 speed_scale = 1.2

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bootsk3n6xy0b"]
 
-[ext_resource type="Script" path="res://buraco.gd" id="1_k14r3"]
+[ext_resource type="Script" uid="uid://ust42fbpemvl" path="res://buraco.gd" id="1_k14r3"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_6md7d"]
 

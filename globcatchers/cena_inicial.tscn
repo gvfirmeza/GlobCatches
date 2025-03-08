@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dkuarbc12yna5"]
 
-[ext_resource type="Script" path="res://cena_inicial.gd" id="1_ga6lk"]
+[ext_resource type="Script" uid="uid://be2ptcn3m25i1" path="res://cena_inicial.gd" id="1_ga6lk"]
 [ext_resource type="Texture2D" uid="uid://2xejbgb1tr8c" path="res://assets/LOGO_GLOBCATCHERS.png" id="2_8xt5p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6kwa"]

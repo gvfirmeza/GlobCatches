@@ -1,7 +1,9 @@
-res://cena.tscn
-res://player.gd
-res://cena.gd
-res://player.tscn
-res://cena_inicial.tscn
+res://banco.tscn
 res://buraco.tscn
-res://buraco.gd
+res://cena.tscn
+res://cena_inicial.tscn
+res://player.tscn
+res://árvore.tscn
+res://player.gd
+res://control.gd
+res://control.tscn

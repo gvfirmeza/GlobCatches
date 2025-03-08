@@ -115,7 +115,7 @@ func _on_buraco_player_entered(area) -> void:
 func _on_buraco_player_exited() -> void:
 	is_colliding_buraco = false
 	buraco_atual = null
-	
+
 func cavar_buraco():
 	if is_colliding_buraco:
 		if Input.is_action_just_pressed("mouse_click"):
@@ -124,4 +124,6 @@ func cavar_buraco():
 				catch_player.play("catch")
 				await catch_player.animation_finished
 				buraco_atual.queue_free()
+				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+				done_digging.emit()
 				can_move = true

@@ -1,0 +1,104 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqlw1fnf7d026"]
+
+[ext_resource type="Script" uid="uid://d4etavjx3w1vo" path="res://control.gd" id="1_0fbet"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
+bg_color = Color(0.0144, 0.24, 0.11592, 0.941176)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="GlobPopUp" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="GlobPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.5
+offset_top = -172.0
+offset_right = 260.5
+offset_bottom = 172.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
+
+[node name="Label2" type="Label" parent="GlobPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.5
+offset_top = -175.5
+offset_right = 168.5
+offset_bottom = -102.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Congratulations, you just found a glob!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="GlobPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.5
+offset_top = 92.5
+offset_right = 92.5
+offset_bottom = 165.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GlobPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -89.5
+offset_top = -96.0
+offset_right = 89.5
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="GlobPopUp"]
+layout_mode = 2
+offset_left = 229.0
+offset_top = -132.0
+offset_right = 260.0
+offset_bottom = -101.0
+text = "X"
+
+[connection signal="button_down" from="GlobPopUp/Button" to="." method="_on_button_button_down"]
+[connection signal="pressed" from="GlobPopUp/Button" to="." method="_on_button_pressed"]
